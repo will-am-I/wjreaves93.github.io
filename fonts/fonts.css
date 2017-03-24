@@ -1,0 +1,140 @@
+@font-face
+{
+   font-family: Summit;
+   src: url(Summit/SummitRegular.otf);
+   src: url(Summit/SummitRegular.ttf);
+   font-weight: 500;
+}
+
+@font-face
+{
+   font-family: 'Summit Light';
+   src: url(Summit/SummitLight.otf);
+   src: url(Summit/SummitLight.ttf);
+   font-weight: 300;
+}
+
+@font-face
+{
+   font-family: 'Summit Thin';
+   src: url(Summit/SummitThin.otf);
+   src: url(Summit/SummitThin.ttf);
+   font-weight: 100;
+}
+
+@font-face
+{
+   font-family: 'Summit Bold';
+   src: url(Summit/SummitBold.otf);
+   src: url(Summit/SummitBold.ttf);
+   font-weight: 900;
+}
+
+@font-face
+{
+   font-family: 'Summit Medium';
+   src: url(Summit/SummitMedium.otf);
+   src: url(Summit/SummitMedium.ttf);
+   font-weight: 700;
+}
+
+@font-face
+{
+   font-family: Raleway;
+   src: url(Raleway/RalewayThin.eot);
+   src: url(Raleway/RalewayThin.otf);
+   src: url(Raleway/RalewayThin.svg);
+   src: url(Raleway/RalewayThin.ttf);
+   src: url(Raleway/RalewayThin.woff);
+}
+
+@font-face
+{
+   font-family: Bitner;
+   src: url(Bitner/BitnerRegular.otf);
+   src: url(Bitner/BitnerRegular.ttf);
+}
+
+@font-face
+{
+   font-family: 'Bitner Bold Italic';
+   src: url(Bitner/BitnerBoldItalic.otf);
+   src: url(Bitner/BitnerBoldItalic.ttf);
+   font-weight: bold;
+   font-style: italic;
+}
+
+@font-face
+{
+   font-family: 'Bitner Ultra Light';
+   src: url(Bitner/BitnerUltraLight.otf);
+   src: url(Bitner/BitnerUltraLight.ttf);
+   font-weight: lighter;
+}
+
+@font-face
+{
+   font-family: 'Bitner Ultra Light Italic';
+   src: url(Bitner/BitnerUltraLightItalic.otf);
+   src: url(Bitner/BitnerUltraLightItalic.ttf);
+   font-weight: lighter;
+   font-style: italic;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProRegular.otf);
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro Black';
+   src: url(FoobarPro/FoobarProBlack.otf);
+   font-weight: bolder;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro Black Oblique';
+   src: url(FoobarPro/FoobarProBlackOblique.otf);
+   font-weight: bolder;
+   font-style: oblique;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProBold.otf);
+   font-weight: bold;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProBoldOblique.otf);
+   font-weight: bold;
+   font-style: oblique;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProLight.otf);
+   font-weight: lighter;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProLightOblique.otf);
+   font-weight: lighter;
+   font-style: oblique;
+}
+
+@font-face
+{
+   font-family: 'Foobar Pro';
+   src: url(FoobarPro/FoobarProOblique.otf);
+   font-style: oblique;
+}
