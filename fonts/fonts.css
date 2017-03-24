@@ -8,7 +8,7 @@
 
 @font-face
 {
-   font-family: 'Summit Light';
+   font-family: Summit;
    src: url(Summit/SummitLight.otf);
    src: url(Summit/SummitLight.ttf);
    font-weight: 300;
@@ -16,7 +16,7 @@
 
 @font-face
 {
-   font-family: 'Summit Thin';
+   font-family: Summit;
    src: url(Summit/SummitThin.otf);
    src: url(Summit/SummitThin.ttf);
    font-weight: 100;
@@ -24,7 +24,7 @@
 
 @font-face
 {
-   font-family: 'Summit Bold';
+   font-family: Summit;
    src: url(Summit/SummitBold.otf);
    src: url(Summit/SummitBold.ttf);
    font-weight: 900;
@@ -32,7 +32,7 @@
 
 @font-face
 {
-   font-family: 'Summit Medium';
+   font-family: Summit;
    src: url(Summit/SummitMedium.otf);
    src: url(Summit/SummitMedium.ttf);
    font-weight: 700;
@@ -57,7 +57,7 @@
 
 @font-face
 {
-   font-family: 'Bitner Bold Italic';
+   font-family: Bitner;
    src: url(Bitner/BitnerBoldItalic.otf);
    src: url(Bitner/BitnerBoldItalic.ttf);
    font-weight: bold;
@@ -66,7 +66,7 @@
 
 @font-face
 {
-   font-family: 'Bitner Ultra Light';
+   font-family: Bitner;
    src: url(Bitner/BitnerUltraLight.otf);
    src: url(Bitner/BitnerUltraLight.ttf);
    font-weight: lighter;
@@ -74,7 +74,7 @@
 
 @font-face
 {
-   font-family: 'Bitner Ultra Light Italic';
+   font-family: Bitner;
    src: url(Bitner/BitnerUltraLightItalic.otf);
    src: url(Bitner/BitnerUltraLightItalic.ttf);
    font-weight: lighter;
@@ -89,14 +89,14 @@
 
 @font-face
 {
-   font-family: 'Foobar Pro Black';
+   font-family: 'Foobar Pro';
    src: url(FoobarPro/FoobarProBlack.otf);
    font-weight: bolder;
 }
 
 @font-face
 {
-   font-family: 'Foobar Pro Black Oblique';
+   font-family: 'Foobar Pro';
    src: url(FoobarPro/FoobarProBlackOblique.otf);
    font-weight: bolder;
    font-style: oblique;

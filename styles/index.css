@@ -1,0 +1,83 @@
+@import url(../fonts/fonts.css);
+
+body
+{
+   margin: 0;
+   overflow: hidden;
+   font-family: Bitner;
+   font-weight: lighter;
+}
+
+header
+{
+   margin-top: -30px;
+   margin-bottom: -20px;
+   font-family: 'Foobar Pro';
+   font-weight: lighter;
+   font-style: oblique;
+   vertical-align: middle;
+   color: #FFA055;
+}
+
+header h1
+{
+   font-size: 50pt;
+   margin-top: 30px;
+   padding: 15px 0px 0px 50px;
+}
+
+#banner
+{
+   background-color: #858585;
+}
+
+nav ul
+{
+   width: 100%;
+   padding-left: 75px;
+   border: 1px #A2A2A2 solid;
+   border-radius: 20px;
+   background-color: #E0E0E0;
+   max-height: 50px;
+   vertical-align: middle;
+}
+
+nav ul li
+{
+   display: inline;
+   list-style-type: none;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 50px;
+   height: 100%;
+}
+
+nav ul li a
+{
+   width: 10%;
+   height: 100%;
+   display: inline-block;
+   text-decoration: none;
+   color: #151515;
+   font-family: Raleway;
+   letter-spacing: .2em;
+   font-weight: bold;
+}
+
+nav ul li a:hover
+{
+   background-color: #AAAAAA;
+}
+
+footer
+{
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   border-top: 1px #000000 solid;
+   text-align: center;
+   vertical-align: middle;
+   font-weight: bold;
+   background-color: #FFFFFFCE;
+   padding: 2px;
+}
