@@ -4,17 +4,10 @@ body
 {
    margin: 0;
    overflow: hidden;
-   font-family: Bitner;
-   font-weight: lighter;
    background-image: url(../images/background.jpg);
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: 0px -100px;
-}
-
-#banner
-{
-   background-color: #A3A49BE0;
 }
 
 header
@@ -25,13 +18,14 @@ header
    font-weight: lighter;
    font-style: oblique;
    vertical-align: middle;
+   background-color: #A3A49BE0;
 }
 
 header h1
 {
    font-size: 50pt;
    margin-top: 30px;
-   padding: 15px 0px 0px 50px;
+   padding: 15px 0px 20px 50px;
    color: #78501F;
 }
 
@@ -41,9 +35,10 @@ nav ul
    padding-left: 75px;
    border: 1px #A2A2A2 solid;
    border-radius: 15px;
-   background-color: #E0E0E0CE;
+   background-color: #E0E0E0;
    max-height: 50px;
    vertical-align: middle;
+   margin-top: -55px;
 }
 
 nav ul li
@@ -73,7 +68,7 @@ nav ul li a
 
 nav ul li a:hover
 {
-   background-color: #AAAAAACE;
+   background-color: #AAAAAA80;
 }
 
 img
@@ -91,7 +86,9 @@ footer
    border-top: 1px #000000 solid;
    text-align: center;
    vertical-align: middle;
-   font-weight: bold;
    background-color: #FFFFFFCE;
    padding: 2px;
+   font-family: Bitner;
+   font-weight: bold;
+   letter-spacing: .1em;
 }
