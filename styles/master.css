@@ -1,4 +1,8 @@
 @import url(../fonts/fonts.css);
+@import url(about.css);
+@import url(portfolio.css);
+@import url(resume.css);
+@import url(clients.css);
 
 html
 {
@@ -34,48 +38,47 @@ header h1
    color: #78501F;
 }
 
-nav
+#headnav
 {
    width: 100%;
    margin-top: -25px;
 }
 
-nav ul
+#headnav ul
 {
    position: relative;
    padding-left: 75px;
    border: 1px #A2A2A2 solid;
    background-color: #E0E0E0;
-   max-height: 50px;
    vertical-align: middle;
+   height: 55px;
 }
 
-nav ul li
+#headnav ul li
 {
-   display: inline;
+   display: inline-block;
    list-style-type: none;
    text-align: center;
    vertical-align: middle;
    line-height: 50px;
-   height: 100%;
-   margin-left: -2px;
-   margin-right: -2px;
-}
-
-nav ul li a
-{
+   height: 90%;
    width: 10%;
-   height: 100%;
-   display: inline-block;
-   text-decoration: none;
    color: #151515;
    font-family: Raleway;
    letter-spacing: .2em;
    font-weight: bold;
-   margin: 0;
+   margin-right: 5px;
+   margin-left: 5px;
+   margin-top: 2.5px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   cursor: hand;
+   border-radius: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
 }
 
-nav ul li a:hover
+#headnav ul li:hover
 {
    background-color: #AAAAAA;
    background-color: #AAAAAACE;

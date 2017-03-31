@@ -1,12 +1,135 @@
-<!DOCTYPE html>
-
-<html>
-   <head>
-      <title>Portfolio</title>
-      <meta charset="UTF-8" />
-      <link href="../images/home_icon.png" rel="shortcut icon" />
-   </head>
-   <body>
-      
-   </body>
-</html>
+<script>
+   $('#codeexample').ready(function()
+   {
+      $('#example').ready(function()
+      {
+         $('#agenterroraspx').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/agenterror.aspx',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#agenterrorcs').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/agenterror.aspx.cs',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#rosterphp').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/roster.php',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#rostercss').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/roster.css',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#scoreboardhtml').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/scoreboard.html',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#adventurephp').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/adventure.php',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+         
+         $('#hordephp').click(function()
+         {
+            $('#codeexample').css('display', 'block');
+            
+            $.ajax(
+            {
+               url: 'files/horde.php',
+               dataType: 'text',
+               success: function(data)
+               {
+                  $('#example').empty();
+                  $('#example').text(data);
+               }
+            });
+         });
+      });
+   });
+</script>
+<nav id="codenav">
+	<ul>
+		<li id="agenterroraspx" class="code">AgentError.aspx</li>
+		<li id="agenterrorcs" class="code">AgentError.aspx.cs</li>
+      <li class="line"><hr /></li>
+		<li id="rosterphp" class="code">Roster.php</li>
+		<li id="rostercss" class="code">Roster.css</li>
+      <li class="line"><hr /></li>
+      <li id="scoreboardhtml" class="code">Scoreboard.html</li>
+      <li id="adventurephp" class="code">Adventure.php</li>
+      <li id="hordephp" class="code">Horde.php</li>
+	</ul>
+</nav>
+<aside id="codeexample">
+	<pre id="example"></pre>
+</aside>

@@ -1,0 +1,78 @@
+#codenav
+{
+   display: block;
+   height: 90%;
+   width: 17%;
+   float: left;
+   margin-left: 20px;
+   overflow-x: auto;
+   overflow-y: none;
+}
+
+#codenav ul
+{
+   display: block;
+   position: relative;
+   background-color: #E0E0E0;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   padding: 20px;
+   list-style-type: none;
+}
+
+#codenav ul .code
+{
+   display: block;
+   cursor: pointer;
+   cursor: hand;
+   padding: 5px 15px 5px 15px;
+   margin-top: 5px;
+}
+
+#codenav ul .code:hover
+{
+   background-color: #BDBDBD;
+   outline: 2px #959595 solid;
+}
+
+#codenav ul .line
+{
+   padding: 0;
+   margin: -11px 0px 0px 0px;
+   height: 5px;
+}
+
+#codenav ul .line hr
+{
+   display: block;
+   height: 2px;
+   width: 100%;
+   border-color: #484848;
+}
+
+#codeexample
+{
+   float: left;
+   height: 90%;
+   max-height: 795px;
+   width: 80%;
+   display: none;
+   margin-left: 20px;
+   overflow: auto;
+   background-color: #E0E0E0;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+}
+
+#example
+{
+   padding: 20px;
+   padding-bottom: 10px;
+   background-color: #E0E0E0;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border: none;
+}
