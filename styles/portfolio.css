@@ -61,9 +61,10 @@
    margin-left: 20px;
    overflow: auto;
    background-color: #E0E0E0;
-   border-radius: 10px;
-   -moz-border-radius: 10px;
-   -webkit-border-radius: 10px;
+   border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border: 10px #E0E0E0 solid;
 }
 
 #example
@@ -71,8 +72,5 @@
    padding: 20px;
    padding-bottom: 10px;
    background-color: #E0E0E0;
-   border-radius: 10px;
-   -moz-border-radius: 10px;
-   -webkit-border-radius: 10px;
    border: none;
 }
