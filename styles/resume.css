@@ -1,0 +1,128 @@
+#experience
+{
+	font-family: 'Times New Roman';
+   font-size: 12pt;
+	float: left;
+	width: 75%;
+	max-width: 100vh;
+}
+
+#education
+{
+	margin: 10px 10px 10px 20px;
+	width: 100%;
+	background-color: #E0E0E0;
+	max-height: 20vh;
+	padding: 10px;
+   border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border: 5px #E0E0E0 solid;
+   overflow-x: auto;
+   overflow-y: none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#work
+{
+	margin: 20px 10px 0px 20px;
+	width: 100%;
+	background-color: #E0E0E0;
+	max-height: 50vh;
+	overflow-x: auto;
+	overflow-y: none;
+	padding: 10px;
+   border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border: 5px #E0E0E0 solid;
+   overflow-x: auto;
+   overflow-y: none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#skills
+{
+	font-family: 'Times New Roman';
+   font-size: 12pt;
+	float: right;
+	margin: 10px 15px 20px 0px;
+	width: 50%;
+	padding: 10px;
+	max-width: 90vh;
+	max-height: 72vh;
+	background-color: #E0E0E0;
+   border-radius: 20px;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border: 5px #E0E0E0 solid;
+   overflow-x: auto;
+   overflow-y: none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+.title
+{
+   position: fixed;
+   margin-top: -10px;
+   width: 40vh;
+   background-color: #E0E0E0;
+}
+
+.list
+{
+   padding: 40px 10px 0px 30px;
+}
+
+.place
+{
+   font-weight: bolder;
+   font-size: 16pt;
+   text-indent: -1em;
+}
+
+.category
+{
+   font-weight: bold;
+   font-size: 14pt;
+}
+
+li
+{
+   margin-left: -3px;
+}
+
+li
+{
+   list-style-type: square;
+}
+
+#download
+{
+	clear: both;
+	margin: 5px 40% 5px 40%;
+   text-align: center;
+	width: 200px;
+   color: #080808;
+}
+
+#download a
+{
+	display: block;
+	text-decoration: none;
+   background-color: #E0E0E0;
+   padding: 15px;
+   color: #080808;
+   border-radius: 17px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#download a:hover
+{
+   background-color: #AAAAAA;
+}
+
+#download a:active
+{
+   background-color: #AAAAAA;
+}
