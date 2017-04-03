@@ -2,28 +2,40 @@ $(document).ready(function()
 {
 	$('#body').ready(function()
 	{
-		$('#about').click(function()
+		$('#about').ready(function()
 		{
-			$('#body').empty();
-			$('#body').load('pages/about.html');
+			$('#about').click(function()
+			{
+				$('#body').empty();
+				$('#body').load('pages/about.html');
+			});
+		});
+		
+		$('#portfolio').ready()(function()
+		{
+			$('#portfolio').click(function()
+			{
+				$('#body').empty();
+				$('#body').load('pages/portfolio.html');
+			});
+		});
+		
+		$('#resume').ready()(function()
+		{
+			$('#resume').click(function()
+			{
+				$('#body').empty();
+				$('#body').load('pages/resume.html');
+			});
 		});
 
-		$('#portfolio').click(function()
+		$('#clients').ready()(function()
 		{
-			$('#body').empty();
-			$('#body').load('pages/portfolio.html');
-		});
-
-		$('#resume').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/resume.html');
-		});
-
-		$('#clients').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/clients.html');
+			$('#clients').click(function()
+			{
+				$('#body').empty();
+				$('#body').load('pages/clients.html');
+			});
 		});
 	});
 });
