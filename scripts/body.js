@@ -11,7 +11,7 @@ $(document).ready(function()
 			});
 		});
 		
-		$('#portfolio').ready()(function()
+		$('#portfolio').ready(function()
 		{
 			$('#portfolio').click(function()
 			{
@@ -20,7 +20,7 @@ $(document).ready(function()
 			});
 		});
 		
-		$('#resume').ready()(function()
+		$('#resume').ready(function()
 		{
 			$('#resume').click(function()
 			{
@@ -29,7 +29,7 @@ $(document).ready(function()
 			});
 		});
 
-		$('#clients').ready()(function()
+		$('#clients').ready(function()
 		{
 			$('#clients').click(function()
 			{
