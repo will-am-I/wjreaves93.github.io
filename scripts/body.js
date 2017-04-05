@@ -1,29 +1,26 @@
 $(document).ready(function()
 {
-	$('#header').ready(function()
+	$('#header').on('click', '#about', function()
 	{
-		$('#about').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/about.html');
-		});
-		
-		$('#portfolio').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/portfolio.html');
-		});
-		
-		$('#resume').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/resume.html');
-		});
+		$('#body').empty();
+		$('#body').load('pages/about.html');
+	});
 
-		$('#clients').click(function()
-		{
-			$('#body').empty();
-			$('#body').load('pages/clients.html');
-		});
+	$('#header').on('click', '#portfolio', function()
+	{
+		$('#body').empty();
+		$('#body').load('pages/portfolio.html');
+	});
+
+	$('#header').on('click', '#resume', function()
+	{
+		$('#body').empty();
+		$('#body').load('pages/resume.html');
+	});
+
+	$('#header').on('click', '#clients', function()
+	{
+		$('#body').empty();
+		$('#body').load('pages/clients.html');
 	});
 });
