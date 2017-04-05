@@ -4,38 +4,26 @@ $(document).ready(function()
 	{
 		$('#about').click(function()
 		{
-			$('#body').ready(function()
-			{
-				$('#body').empty();
-				$('#body').load('pages/about.html');
-			});
+			$('#body').empty();
+			$('#body').load('pages/about.html');
 		});
 		
 		$('#portfolio').click(function()
 		{
-			$('#portfolio').ready(function()
-			{
-				$('#body').empty();
-				$('#body').load('pages/portfolio.html');
-			});
+			$('#body').empty();
+			$('#body').load('pages/portfolio.html');
 		});
 		
 		$('#resume').click(function()
 		{
-			$('#resume').ready(function()
-			{
-				$('#body').empty();
-				$('#body').load('pages/resume.html');
-			});
+			$('#body').empty();
+			$('#body').load('pages/resume.html');
 		});
 
 		$('#clients').click(function()
 		{
-			$('#clients').ready(function()
-			{
-				$('#body').empty();
-				$('#body').load('pages/clients.html');
-			});
+			$('#body').empty();
+			$('#body').load('pages/clients.html');
 		});
 	});
 });
