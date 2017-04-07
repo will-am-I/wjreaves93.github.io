@@ -3,16 +3,16 @@
 	font-family: 'Times New Roman';
    font-size: 12pt;
 	float: left;
-	width: 75%;
-	max-width: 100vh;
+	width: 55%;
+	height: 78%;
 }
 
-#education
+#experience #education
 {
 	margin: 10px 10px 10px 20px;
 	width: 100%;
 	background-color: #E0E0E0;
-	max-height: 20vh;
+	height: 35%;
 	padding: 10px;
    border-radius: 20px;
    -moz-border-radius: 20px;
@@ -23,12 +23,12 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
 }
 
-#work
+#experience #work
 {
 	margin: 20px 10px 0px 20px;
 	width: 100%;
 	background-color: #E0E0E0;
-	max-height: 50vh;
+	height: 62%;
 	overflow-x: auto;
 	overflow-y: none;
 	padding: 10px;
@@ -47,10 +47,9 @@
    font-size: 12pt;
 	float: right;
 	margin: 10px 15px 20px 0px;
-	width: 50%;
+	width: 40%;
 	padding: 10px;
-	max-width: 90vh;
-	max-height: 72vh;
+	height: 78%;
 	background-color: #E0E0E0;
    border-radius: 20px;
    -moz-border-radius: 20px;
@@ -61,11 +60,19 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
 }
 
-.title
+#experience .title
 {
    position: fixed;
    margin-top: -10px;
-   width: 40vh;
+   width: 50%;
+   background-color: #E0E0E0;
+}
+
+#skills .title
+{
+   position: fixed;
+   margin-top: -10px;
+   width: 35%;
    background-color: #E0E0E0;
 }
 
@@ -90,17 +97,28 @@
 li
 {
    margin-left: -3px;
+   list-style-type: square;
 }
 
-li
+#programming, #teamwork
 {
-   list-style-type: square;
+   clear: left;
+	float: left;
+   width: 250px;
+}
+
+#design, #writespeak, #leader
+{
+	clear: right;
+	float: right;
+	width: 350px;
 }
 
 #download
 {
 	clear: both;
-	margin: 5px 40% 5px 40%;
+	margin-right: 40%;
+	margin-left: 40%;
    text-align: center;
 	width: 200px;
    color: #080808;

@@ -1,8 +1,8 @@
 @import url(../fonts/fonts.css);
-@import url(about.css);
-@import url(portfolio.css);
-@import url(resume.css);
-@import url(clients.css);
+@import url(landscapeabout.css);
+@import url(landscapeportfolio.css);
+@import url(landscaperesume.css);
+@import url(landscapeclients.css);
 
 html
 {
@@ -17,6 +17,7 @@ body
    background-repeat: no-repeat;
    background-position: center top;
    background-size: 200vh 125vh;
+	min-height: 125vh;
 }
 
 header
@@ -28,6 +29,13 @@ header
    vertical-align: middle;
    background-color: #A3A49B;
    background-color: #A3A49BE0;
+}
+
+#header
+{
+	position: fixed;
+	top: 0px;
+	width: 100%;
 }
 
 header h1
@@ -93,7 +101,15 @@ header h1
    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.48);
 }
 
-footer
+#body
+{
+	position: fixed;
+	top: 150px;
+	bottom: 0px;
+	width: 100%;
+}
+
+#footer
 {
    position: fixed;
    bottom: 0px;

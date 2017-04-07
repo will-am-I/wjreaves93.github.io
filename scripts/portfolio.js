@@ -12,8 +12,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -28,8 +27,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -44,8 +42,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -60,8 +57,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -76,8 +72,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -92,8 +87,7 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
@@ -108,10 +102,16 @@ $('#codeexample').ready(function()
 				dataType: 'text',
 				success: function(data)
 				{
-					$('#example').empty();
-					$('#example').text(data);
+					showExample(data);
 				}
 			});
 		});
 	});
 });
+
+function showExample(data)
+{
+   $('#example').empty();
+   $('#example').text(data);
+   $('#codeexample').scrollTop(0);
+}

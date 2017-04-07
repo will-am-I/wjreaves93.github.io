@@ -1,13 +1,13 @@
 #codenav
 {
    display: block;
-   height: 90%;
-	max-height: 72vh;
+   height: 78%;
    width: 17%;
    float: left;
    margin-left: 20px;
-   overflow-x: auto;
-   overflow-y: none;
+   overflow-x: hidden;
+   overflow-y: auto;
+	margin-top: 5px;
 }
 
 #codenav ul
@@ -57,12 +57,13 @@
 #codeexample
 {
    float: left;
-   height: 90%;
-   max-height: 72vh;
+   height: 78%;
    width: 80%;
    display: none;
    margin-left: 20px;
-   overflow: auto;
+	margin-top: 5px;
+   overflow-x: hidden;
+   overflow-y: auto;
    background-color: #E0E0E0;
    border-radius: 20px;
    -moz-border-radius: 20px;
@@ -73,8 +74,8 @@
 
 #example
 {
-   padding: 20px;
-   padding-bottom: 10px;
+   padding: 20px 20px 10px 20px;
+   border: 5px #E0E0E0 solid;
    background-color: #E0E0E0;
-   border: none;
+   white-space: pre-wrap;
 }
