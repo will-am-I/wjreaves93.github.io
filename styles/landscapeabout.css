@@ -17,18 +17,21 @@
 {
    display: block;
    float: left;
-   margin-top: 225px;
+   margin-top: 200px;
    margin-left: -20px;
    background-color: #E0E0E0;
    border-radius: 15px;
    width: 40%;
    padding: 20px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   font-family: Glyphicons;
+   font-size: 15pt;
 }
 
 #info p
 {
-   line-height: 1.5em;
+   line-height: 1.15em;
+   padding: 5px;
 }
 
 #info p:first-letter
