@@ -6,18 +6,14 @@
 
 html
 {
-	font-family: Bitner;
+   background: url(../../images/background.jpg) no-repeat center center fixed;
+   background-size: cover;
 }
 
 body
 {
    margin: 0;
    overflow: hidden;
-   background-image: url(../../images/background.jpg);
-   background-repeat: no-repeat;
-   background-position: center top;
-   background-size: 200vh 125vh;
-	min-height: 125vh;
 }
 
 header
@@ -71,7 +67,7 @@ header h1
    vertical-align: middle;
    line-height: 50px;
    height: 90%;
-   width: 10%;
+   width: 100px;
    color: #151515;
    font-family: Raleway;
    letter-spacing: .2em;
@@ -120,6 +116,7 @@ header h1
    background-color: #FFFFFF;
    background-color: #FFFFFFCE;
    padding: 2px;
-   font-weight: bold;
+   font-family: Bitner;
+   font-weight: bolder;
    letter-spacing: .1em;
 }

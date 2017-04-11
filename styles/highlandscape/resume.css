@@ -3,13 +3,13 @@
 	font-family: 'Times New Roman';
    font-size: 12pt;
 	float: left;
-	width: 55%;
+	width: 48%;
 	height: 78%;
 }
 
 #experience #education
 {
-	margin: 10px 10px 10px 20px;
+	margin: 10px 10px 5px 20px;
 	width: 100%;
 	background-color: #E0E0E0;
 	height: 35%;
@@ -25,7 +25,7 @@
 
 #experience #work
 {
-	margin: 20px 10px 0px 20px;
+	margin: 15px 10px 0px 20px;
 	width: 100%;
 	background-color: #E0E0E0;
 	height: 62%;
@@ -47,7 +47,7 @@
    font-size: 12pt;
 	float: right;
 	margin: 10px 15px 20px 0px;
-	width: 40%;
+	width: 47%;
 	padding: 10px;
 	height: 78%;
 	background-color: #E0E0E0;
@@ -64,7 +64,7 @@
 {
    position: fixed;
    margin-top: -10px;
-   width: 50%;
+   width: 43%;
    background-color: #E0E0E0;
 }
 
@@ -72,7 +72,7 @@
 {
    position: fixed;
    margin-top: -10px;
-   width: 35%;
+   width: 42%;
    background-color: #E0E0E0;
 }
 
@@ -104,14 +104,14 @@ li
 {
    clear: left;
 	float: left;
-   width: 250px;
+   width: 50%;
 }
 
 #design, #writespeak, #leader
 {
 	clear: right;
 	float: right;
-	width: 350px;
+	width: 50%;
 }
 
 #download

@@ -1,0 +1,77 @@
+#codenav
+{
+   display: block;
+   height: 82%;
+   width: 16%;
+   float: left;
+   margin-left: 20px;
+   overflow-x: hidden;
+   overflow-y: auto;
+	margin-top: 5px;
+}
+
+#codenav ul
+{
+   display: block;
+   position: relative;
+   background-color: #E0E0E0;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#codenav ul .code
+{
+   display: block;
+   cursor: pointer;
+   cursor: hand;
+   padding: 5px 15px 5px 15px;
+   margin-top: 5px;
+   list-style-type: none;
+}
+
+#codenav ul .code:hover
+{
+   background-color: #BDBDBD;
+   outline: 2px #959595 solid;
+}
+
+#codenav ul .line
+{
+   padding: 0;
+   margin: -11px 0px 0px 0px;
+   height: 5px;
+   list-style-type: none;
+}
+
+#codenav ul .line hr
+{
+   display: block;
+   height: 2px;
+   width: 100%;
+   border-color: #484848;
+}
+
+#codeexample
+{
+   float: right;
+   height: 82%;
+   width: 78%;
+   display: none;
+   margin-right: 10px;
+	margin-top: 5px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   background-color: #E0E0E0;
+   border-radius: 20px;
+   border: 10px #E0E0E0 solid;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#example
+{
+   padding: 20px 20px 10px 20px;
+   border: 5px #E0E0E0 solid;
+   background-color: #E0E0E0;
+   white-space: pre-wrap;
+}

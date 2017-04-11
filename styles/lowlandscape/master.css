@@ -1,0 +1,122 @@
+@import url(../../fonts/fonts.css);
+@import url(about.css);
+@import url(portfolio.css);
+@import url(resume.css);
+@import url(clients.css);
+
+html
+{
+   background: url(../../images/background.jpg) no-repeat center center fixed;
+   background-size: cover;
+}
+
+body
+{
+   margin: 0;
+   overflow: hidden;
+}
+
+header
+{
+   margin-top: -30px;
+   margin-bottom: -30px;
+   font-family: 'Foobar Pro';
+   font-style: oblique;
+   vertical-align: middle;
+   background-color: #A3A49B;
+   background-color: #A3A49BE0;
+}
+
+#header
+{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+header h1
+{
+   font-size: 50pt;
+   margin-top: 30px;
+   padding: 15px 0px 20px 50px;
+   color: #78501F;
+}
+
+#headnav
+{
+   width: 100%;
+   margin-top: -25px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#headnav ul
+{
+   position: relative;
+   padding-left: 75px;
+   border: 1px #A2A2A2 solid;
+   background-color: #E0E0E0;
+   vertical-align: middle;
+   height: 55px;
+}
+
+#headnav ul li
+{
+   display: inline-block;
+   list-style-type: none;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 50px;
+   height: 90%;
+   width: 100px;
+   color: #151515;
+   font-family: Raleway;
+   letter-spacing: .2em;
+   font-weight: bold;
+   margin-right: 5px;
+   margin-left: 5px;
+   margin-top: 2.5px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   cursor: hand;
+   border-radius: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+}
+
+#headnav ul li:hover
+{
+   background-color: #AAAAAA;
+   background-color: #AAAAAACE;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+}
+
+#headnav ul li:active
+{
+   background-color: #AAAAAA;
+   background-color: #AAAAAACE;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.48);
+}
+
+#body
+{
+	position: fixed;
+	top: 150px;
+	bottom: 0px;
+	width: 100%;
+}
+
+#footer
+{
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   border-top: 1px #000000 solid;
+   text-align: center;
+   vertical-align: middle;
+   background-color: #FFFFFF;
+   background-color: #FFFFFFCE;
+   padding: 2px;
+   font-family: Bitner;
+   font-weight: bolder;
+   letter-spacing: .1em;
+}
