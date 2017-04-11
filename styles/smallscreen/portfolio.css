@@ -1,4 +1,4 @@
-@media (max-width: 1024px) and (min-width: 801px)
+@media (max-width: 1152px) and (min-width: 1025px)
 {
    #codenav
    {
@@ -33,43 +33,7 @@
    }
 }
 
-@media (max-width: 800px)
-{
-   #codenav
-   {
-      display: block;
-      height: 82%;
-      width: 22%;
-      float: left;
-      margin-left: 10px;
-      overflow-x: hidden;
-      overflow-y: auto;
-      margin-top: 5px;
-      background-color: #E0E0E0;
-      border-radius: 10px;
-      border: 10px #E0E0E0 solid;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
-      font-size: 10pt;
-   }
-   
-   #codeexample
-   {
-      float: right;
-      height: 82%;
-      width: 74%;
-      display: none;
-      margin-right: 10px;
-      margin-top: 5px;
-      overflow-x: hidden;
-      overflow-y: auto;
-      background-color: #E0E0E0;
-      border-radius: 20px;
-      border: 10px #E0E0E0 solid;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
-   }
-}
-
-@media (min-width: 1025px)
+@media (min-width: 1153px)
 {
    #codenav
    {
@@ -107,7 +71,7 @@
 {
    display: block;
    position: relative;
-   padding: 2%;
+   padding: 4%;
 }
 
 #codenav ul .code
