@@ -1,23 +1,113 @@
-#codenav
+@media (max-width: 1024px) and (min-width: 801px)
 {
-   display: block;
-   height: 82%;
-   width: 16%;
-   float: left;
-   margin-left: 20px;
-   overflow-x: hidden;
-   overflow-y: auto;
-	margin-top: 5px;
+   #codenav
+   {
+      display: block;
+      height: 82%;
+      width: 19%;
+      float: left;
+      margin-left: 15px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      margin-top: 5px;
+      background-color: #E0E0E0;
+      border-radius: 10px;
+      border: 10px #E0E0E0 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   }
+   
+   #codeexample
+   {
+      float: right;
+      height: 82%;
+      width: 74%;
+      display: none;
+      margin-right: 15px;
+      margin-top: 5px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #E0E0E0;
+      border-radius: 20px;
+      border: 10px #E0E0E0 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   }
+}
+
+@media (max-width: 800px)
+{
+   #codenav
+   {
+      display: block;
+      height: 82%;
+      width: 22%;
+      float: left;
+      margin-left: 10px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      margin-top: 5px;
+      background-color: #E0E0E0;
+      border-radius: 10px;
+      border: 10px #E0E0E0 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+      font-size: 10pt;
+   }
+   
+   #codeexample
+   {
+      float: right;
+      height: 82%;
+      width: 74%;
+      display: none;
+      margin-right: 10px;
+      margin-top: 5px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #E0E0E0;
+      border-radius: 20px;
+      border: 10px #E0E0E0 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   }
+}
+
+@media (min-width: 1025px)
+{
+   #codenav
+   {
+      display: block;
+      height: 82%;
+      width: 16%;
+      float: left;
+      margin-left: 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      margin-top: 5px;
+      background-color: #E0E0E0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   }
+   
+   #codeexample
+   {
+      float: right;
+      height: 82%;
+      width: 78%;
+      display: none;
+      margin-right: 20px;
+      margin-top: 5px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #E0E0E0;
+      border-radius: 20px;
+      border: 10px #E0E0E0 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   }
 }
 
 #codenav ul
 {
    display: block;
    position: relative;
-   background-color: #E0E0E0;
-   border-radius: 10px;
-   padding: 20px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+   padding: 2%;
 }
 
 #codenav ul .code
@@ -50,22 +140,6 @@
    height: 2px;
    width: 100%;
    border-color: #484848;
-}
-
-#codeexample
-{
-   float: right;
-   height: 82%;
-   width: 78%;
-   display: none;
-   margin-right: 10px;
-	margin-top: 5px;
-   overflow-x: hidden;
-   overflow-y: auto;
-   background-color: #E0E0E0;
-   border-radius: 20px;
-   border: 10px #E0E0E0 solid;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
 }
 
 #example
