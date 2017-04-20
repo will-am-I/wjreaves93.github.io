@@ -70,41 +70,6 @@
    }
 }
 
-@media (max-width: 800px)
-{
-   #info
-   {
-      display: block;
-      height: 72%;
-      background-color: #E0E0E0;
-      border-radius: 15px;
-      padding: 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
-      font-family: Glyphicons;
-      margin-top: 10px;
-      margin-left: 5%;
-      margin-right: 5%;
-      background-image: url(../../images/willreaves.png);
-      background-size: contain;
-      background-position: 2% 1%;
-      background-repeat: no-repeat;
-      padding-left: 30%;
-   }
-
-   #info p
-   {
-      line-height: 95%;
-      padding: 5px;
-      font-size: 100%;
-      text-align: justify;
-   }
-
-   #info p:first-letter
-   {
-      font-size: 115%;
-   }
-}
-
 #info ul
 {
    margin-left: -20px;
