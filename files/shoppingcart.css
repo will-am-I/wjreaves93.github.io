@@ -1,0 +1,158 @@
+@font-face
+{
+   font-family: 'Archivo Black';
+   src: url('../../Fonts/ArchivoBlack-Regular.otf') format('opentype'),
+        url('../../Fonts/ArchivoBlack-Regular.ttf') format('truetype');
+   font-weight: bold;
+}
+
+body
+{
+   margin: 10px;
+   font-family: 'Archivo Black';
+   font-weight: normal;
+}
+
+h1
+{
+   text-align: center;
+}
+
+p
+{
+   margin-left: 265px;
+}
+
+label
+{
+   margin-left: 230px;
+}
+
+#serverResults
+{
+   margin-left: 150px;
+   width: 50%;
+   max-width: 750px;
+}
+
+table
+{
+   border-collapse: collapse;
+   border-spacing: 0px;
+   border: 1px grey solid;
+}
+
+table tr:nth-of-type(odd)
+{
+   background-color: #E0E0E0;
+}
+
+table tr:first-of-type
+{
+   background-color: orange;
+   border-bottom: 1px grey solid;
+}
+
+#cart tr:last-of-type
+{
+   background-color: darkorange;
+}
+
+tr
+{
+   vertical-align: middle;
+}
+
+td, th
+{
+   min-width: 160px;
+}
+
+.name
+{
+   font-size: 16pt;
+}
+
+.price
+{
+   text-align: right;
+}
+
+.year, .date, .quantity, .picture, .update, .insert
+{
+   text-align: center;
+}
+
+button
+{
+   width: 130px;
+   height: 55px;
+   background-color: orange;
+   border: 2px darkgrey solid;
+   font-family: 'Archivo Black';
+   font-size: 9pt;
+}
+
+button:hover
+{
+   background-color: darkorange;
+}
+
+button:active
+{
+   border-color: black;
+}
+
+.totalPrice
+{
+   text-align: right;
+   text-decoration: underline;
+}
+
+.total
+{
+   text-align: right;
+}
+
+#serverResults p
+{
+   font-style: italic;
+   color: grey;
+   text-align: center;
+}
+
+#gohome
+{
+   padding-top: 100px;
+   margin-bottom: 10px;
+   margin-left: 100px;
+}
+
+#home
+{
+   display: inline-block;
+   padding: 15px 25px;
+   font-family: Castellar, Times New Roman, serif;
+   font-size: 24px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: #FFFFFF;
+   background-color: #00517F;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999999;
+}
+
+#home:hover
+{
+   background-color: #002940;
+}
+
+#home:active
+{
+   background-color: #002940;
+   box-shadow: 0 5px #666666;
+   transform: translateY(4px);
+}

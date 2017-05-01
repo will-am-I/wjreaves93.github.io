@@ -57,6 +57,7 @@ header h1
    background-color: #E0E0E0;
    vertical-align: middle;
    height: 55px;
+	display: block;
 }
 
 #headnav ul li
@@ -95,6 +96,11 @@ header h1
    background-color: #AAAAAA;
    background-color: #AAAAAACE;
    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.48);
+}
+
+#hamburger
+{
+	display: none;
 }
 
 #body

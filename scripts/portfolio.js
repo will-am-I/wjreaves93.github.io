@@ -106,6 +106,51 @@ $('#codeexample').ready(function()
 				}
 			});
 		});
+		
+		$('#shoppingcarthtml').click(function()
+		{
+			$('#codeexample').css('display', 'block');
+			
+			$.ajax(
+			{
+				url: 'files/shoppingcart.html',
+				dataType: 'text',
+				success: function(data)
+				{
+					showExample(data);
+				}
+			});
+		});
+		
+		$('#shoppingcartphp').click(function()
+		{
+			$('#codeexample').css('display', 'block');
+			
+			$.ajax(
+			{
+				url: 'files/shoppingcart.php',
+				dataType: 'text',
+				success: function(data)
+				{
+					showExample(data);
+				}
+			});
+		});
+		
+		$('#shoppingcartcss').click(function()
+		{
+			$('#codeexample').css('display', 'block');
+			
+			$.ajax(
+			{
+				url: 'files/shoppingcart.css',
+				dataType: 'text',
+				success: function(data)
+				{
+					showExample(data);
+				}
+			});
+		});
 	});
 });
 

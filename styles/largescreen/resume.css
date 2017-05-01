@@ -100,14 +100,14 @@ li
    list-style-type: square;
 }
 
-#programming, #teamwork
+.skillsleft
 {
    clear: left;
 	float: left;
    width: 50%;
 }
 
-#design, #writespeak, #leader
+.skillsright
 {
 	clear: right;
 	float: right;

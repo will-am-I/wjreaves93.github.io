@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Shopping Page</title>
+      <meta type="author" content="Will Reaves" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+      <link href="Styles/style06.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript">
+         function showProducts()
+         {
+            var selectRequest;
+            
+            //Check if we can talk to the server
+            if (window.XMLHttpRequest)
+            {
+               selectRequest = new XMLHttpRequest();
+               
+               //What to do when it talks back
+               selectRequest.onreadystatechange = function()
+               {
+                  if (selectRequest.readyState == 4 && selectRequest.status == 200)
+                  {
+                     document.getElementById("serverResults").innerHTML = selectRequest.responseText;
+                  }
+               }
+               
+               //Start talking
+               selectRequest.open("POST", "http://csweb/cs368/Reaves_Will/Programs/program06.php", true);
+               selectRequest.send();
+            }
+         }
+         
+         function showCart()
+         {
+            var selectRequest;
+            
+            //Check if we can talk to the server
+            if (window.XMLHttpRequest)
+            {
+               selectRequest = new XMLHttpRequest();
+               
+               //What to do when it talks back
+               selectRequest.onreadystatechange = function()
+               {
+                  if (selectRequest.readyState == 4 && selectRequest.status == 200)
+                  {
+                     document.getElementById("serverResults").innerHTML = selectRequest.responseText;
+                  }
+               }
+               
+               //Start talking
+               selectRequest.open("POST", "http://csweb/cs368/Reaves_Will/Programs/program06.php?button=cart", true);
+               selectRequest.send();
+            }
+         }
+         
+         function addToCart(productId)
+         {
+            var insertRequest;
+            
+            //Check if we can talk to the server
+            if (window.XMLHttpRequest)
+            {
+               insertRequest = new XMLHttpRequest();
+               
+               //What to do when it talks back
+               insertRequest.onreadystatechange = function()
+               {
+                  if (insertRequest.readyState == 4 && insertRequest.status == 200)
+                  {
+                     document.getElementById("serverResults").innerHTML = insertRequest.responseText;
+                  }
+               }
+               
+               //Start talking
+               insertRequest.open("POST", "http://csweb/cs368/Reaves_Will/Programs/program06.php?button=cart&productid=" + productId, true);
+               insertRequest.send();
+            }
+         }
+         
+         function updateQuantity(orderId)
+         {
+            var updateRequest;
+            var quantity = document.getElementById("txtQuantity" + orderId).value;
+            
+            //Check if we can talk to the server
+            if (window.XMLHttpRequest)
+            {
+               updateRequest = new XMLHttpRequest();
+               
+               //What to do when it talks back
+               updateRequest.onreadystatechange = function()
+               {
+                  if (updateRequest.readyState == 4 && updateRequest.status == 200)
+                  {
+                     document.getElementById("serverResults").innerHTML = updateRequest.responseText;
+                  }
+               }
+               
+               //Start talking
+               updateRequest.open("POST", "http://csweb/cs368/Reaves_Will/Programs/program06.php?button=cart&orderid=" + orderId + "&quantity=" + quantity, true);
+               updateRequest.send();
+            }
+         }
+      </script>
+   </head>
+   <body onload="showProducts()">
+      <h1>This is an example of what your page should look like when you are showing the cart</h1>
+      <p>What would you like to see?</p>
+      <label>
+         Products
+         <input type="radio" checked name="showing" id="products" onclick="showProducts()" />
+      </label>
+      <label>
+         Cart
+         <input type="radio" name="showing" id="cart" onclick="showCart()" />
+      </label>
+      <div id="serverResults"></div>
+      <br />
+      <div style="text-align:center">
+         <a id="home" href="../index.html">Return to Home</a>
+      </div>
+   </body>
+</html>

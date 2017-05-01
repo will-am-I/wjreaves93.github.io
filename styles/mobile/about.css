@@ -31,39 +31,121 @@
    {
       font-size: 115%;
    }
+
+	#info ul
+	{
+		margin-left: -20px;
+	}
+
+	#info ul li
+	{
+		list-style-type: none;
+		display: inline-block;
+		margin: 10px 20px 0px 5px;
+	}
+
+	#info ul li a:hover
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
 }
 
-@media (orientation: portrait)
+@media (orientation: landscape) and (max-width: 768px)
 {
-   #info
+	#info
    {
-      display: block;
-      height: 72%;
+      height: 60%;
       background-color: #E0E0E0;
       border-radius: 15px;
       padding: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
       font-family: Glyphicons;
-      margin-top: 10px;
+      margin-top: 5%;
       margin-left: 5%;
       margin-right: 5%;
-      background-image: url(../../images/willreaves.png);
-      background-size: contain;
-      background-position: 2% 1%;
-      background-repeat: no-repeat;
-      padding-left: 30%;
+		overflow-y: none;
+		overflow-x: auto;
    }
 
    #info p
    {
       line-height: 95%;
       padding: 5px;
-      font-size: 100%;
+      font-size: 110%;
       text-align: justify;
    }
 
    #info p:first-letter
    {
-      font-size: 115%;
+      font-size: 125%;
    }
+
+	#info ul
+	{
+		text-align: center;
+		white-space: nowrap;
+		margin-left: -15px;
+	}
+
+	#info ul li
+	{
+		list-style-type: none;
+		display: inline-block;
+		margin: 10px 20px 0px 5px;
+	}
+
+	#info ul li a:active
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+}
+
+@media (orientation: portrait)
+{
+   #info
+   {
+      height: 60%;
+      background-color: #E0E0E0;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+      font-family: Glyphicons;
+      margin-top: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+		overflow-y: none;
+		overflow-x: auto;
+   }
+
+   #info p
+   {
+      line-height: 95%;
+      padding: 5px;
+      font-size: 110%;
+      text-align: justify;
+   }
+
+   #info p:first-letter
+   {
+      font-size: 125%;
+   }
+
+	#info ul
+	{
+		text-align: center;
+		white-space: nowrap;
+		margin-left: -15px;
+	}
+
+	#info ul li
+	{
+		list-style-type: none;
+		display: inline-block;
+		margin: 10px 20px 0px 5px;
+	}
+
+	#info ul li a:active
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
 }

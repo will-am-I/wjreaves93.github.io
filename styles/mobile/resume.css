@@ -1,0 +1,276 @@
+@media (orientation: landscape) and (max-width: 1024px) and (min-width: 600px)
+{
+	#experience
+	{
+		font-family: 'Times New Roman';
+		font-size: 12pt;
+		float: left;
+		width: 48%;
+		height: 78%;
+	}
+
+	#experience #education
+	{
+		margin: 10px 10px 5px 20px;
+		width: 100%;
+		background-color: #E0E0E0;
+		height: 35%;
+		padding: 10px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#experience #work
+	{
+		margin: 15px 10px 0px 20px;
+		width: 100%;
+		background-color: #E0E0E0;
+		height: 62%;
+		overflow-x: auto;
+		overflow-y: none;
+		padding: 10px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#skills
+	{
+		font-family: 'Times New Roman';
+		font-size: 12pt;
+		float: right;
+		margin: 10px 15px 20px 0px;
+		width: 47%;
+		padding: 10px;
+		height: 78%;
+		background-color: #E0E0E0;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#experience .title
+	{
+		position: fixed;
+		margin-top: -10px;
+		width: 43%;
+		background-color: #E0E0E0;
+	}
+
+	#skills .title
+	{
+		position: fixed;
+		margin-top: -10px;
+		width: 42%;
+		background-color: #E0E0E0;
+	}
+
+	.list
+	{
+		padding: 40px 10px 0px 30px;
+	}
+
+	.place
+	{
+		font-weight: bolder;
+		font-size: 16pt;
+		text-indent: -1em;
+	}
+
+	.category
+	{
+		font-weight: bold;
+		font-size: 14pt;
+	}
+
+	li
+	{
+		margin-left: -3px;
+		list-style-type: square;
+	}
+
+	.skillsleft
+	{
+		clear: left;
+		float: left;
+		width: 50%;
+	}
+
+	.skillsright
+	{
+		clear: right;
+		float: right;
+		width: 50%;
+	}
+
+	#download
+	{
+		clear: both;
+		margin-right: 40%;
+		margin-left: 40%;
+		text-align: center;
+		width: 200px;
+		color: #080808;
+	}
+
+	#download a
+	{
+		display: block;
+		text-decoration: none;
+		background-color: #E0E0E0;
+		padding: 15px;
+		color: #080808;
+		border-radius: 17px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#download a:hover
+	{
+		background-color: #AAAAAA;
+	}
+
+	#download a:active
+	{
+		background-color: #AAAAAA;
+	}
+}
+
+@media (orientation: portrait)
+{
+	#experience
+	{
+		font-family: 'Times New Roman';
+		font-size: 12pt;
+		width: 95%;
+		height: 78%;
+		z-index: 1;
+	}
+
+	#experience #education
+	{
+		margin: 10px;
+		width: 100%;
+		background-color: #E0E0E0;
+		height: 35%;
+		padding: 10px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#experience #work
+	{
+		margin: 10px;
+		width: 100%;
+		background-color: #E0E0E0;
+		height: 62%;
+		overflow-x: auto;
+		overflow-y: none;
+		padding: 10px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#skills
+	{
+		font-family: 'Times New Roman';
+		font-size: 12pt;
+		margin: 10px;
+		width: 95%;
+		padding: 10px;
+		height: 78%;
+		background-color: #E0E0E0;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border: 5px #E0E0E0 solid;
+		overflow-x: auto;
+		overflow-y: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+		z-index: 1;
+	}
+
+	.title
+	{
+		position: fixed;
+		margin-top: -10px;
+		width: 85%;
+		background-color: #E0E0E0;
+	}
+
+	.list
+	{
+		padding: 40px 10px 0px 30px;
+	}
+
+	.place
+	{
+		font-weight: bolder;
+		font-size: 16pt;
+		text-indent: -1em;
+	}
+
+	.category
+	{
+		font-weight: bold;
+		font-size: 14pt;
+	}
+
+	li
+	{
+		margin-left: -3px;
+		list-style-type: square;
+	}
+
+	#download
+	{
+		position: fixed center;
+		bottom: 30px;
+		clear: both;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		min-width: 200px;
+		max-width: 200px;
+		color: #080808;
+		z-index: 1;
+	}
+
+	#download a
+	{
+		display: block;
+		text-decoration: none;
+		background-color: #E0E0E0;
+		padding: 15px;
+		color: #080808;
+		border-radius: 17px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
+	}
+
+	#download a:active
+	{
+		background-color: #AAAAAA;
+	}
+}

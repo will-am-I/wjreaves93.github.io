@@ -53,12 +53,13 @@
 
    #headnav ul
    {
-      position: relative;
+		position: relative;
       padding-left: 75px;
       border: 1px #A2A2A2 solid;
       background-color: #E0E0E0;
       vertical-align: middle;
       height: 55px;
+		display: block;
    }
 
    #headnav ul li
@@ -98,6 +99,11 @@
       background-color: #AAAAAACE;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.48);
    }
+	
+	#hamburber
+	{
+		display: none;
+	}
 
    #body
    {
