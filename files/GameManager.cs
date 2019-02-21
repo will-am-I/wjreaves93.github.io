@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
       else // 25% chance of tourist
       {
          mesh = "touristMesh";
-            material = "touristPlayer";
+         material = "touristPlayer";
       }
 
       skin.material = Resources.Load(material, typeof(Material)) as Material;
@@ -96,7 +96,6 @@ public class GameManager : MonoBehaviour
 
    private void SetLifeSkin (int i, string mesh, string material)
    {
-      
       SkinnedMeshRenderer skin = lifeSkins[i].GetComponent<SkinnedMeshRenderer> ();
 
       skin.material = Resources.Load (material, typeof(Material)) as Material;
@@ -110,77 +109,76 @@ public class GameManager : MonoBehaviour
       yield return gameWait;
    }
    
-      private IEnumerator GameLoop ()
-      {
-         yield return StartCoroutine(RoundStarting());
-         yield return StartCoroutine(RoundPlaying());
-         yield return StartCoroutine(RoundEnding());
-      
-         if (player.GetComponent<playerHealth>().lives > 0)
-         {
-            StartCoroutine(GameLoop());
-         }
-         else
-         {
-         // may or may not be necessary...
-            gameOverScript.endGame();
-         }
-      }
+   private IEnumerator GameLoop ()
+   {
+      yield return StartCoroutine(RoundStarting());
+      yield return StartCoroutine(RoundPlaying());
+      yield return StartCoroutine(RoundEnding());
    
-      private IEnumerator RoundStarting ()
+      if (player.GetComponent<playerHealth>().lives > 0)
       {
-         roundNumber++;
+         StartCoroutine(GameLoop());
+      }
+      else
+      {
+         gameOverScript.endGame();
+      }
+   }
+   
+   private IEnumerator RoundStarting ()
+   {
+      roundNumber++;
 
-         if(roundNumber > 0)
-         {
-            message.text = "ROUND " + roundNumber;
-         }
-         globalController.Instance.rounds = roundNumber;
-         monkeyCount = roundMonkeys;
+      if(roundNumber > 0)
+      {
+         message.text = "ROUND " + roundNumber;
+      }
+      globalController.Instance.rounds = roundNumber;
+      monkeyCount = roundMonkeys;
+   
+      yield return startWait;
+   }
+   
+   private IEnumerator RoundPlaying ()
+   {
+      message.text = "";
+   
+      while (player.GetComponent<playerHealth>().lives > 0 && (monkeyCount > 0 || getMonkeysInPlay() > 0))
+      {
+         SpawnMonkey();
+         SpawnItem();
       
-         yield return startWait;
+         yield return null;
+      }
+   }
+   
+   private IEnumerator RoundEnding ()
+   {
+      if (roundNumber % 2 == 0)
+      {
+         roundMonkeys++;
       }
    
-      private IEnumerator RoundPlaying ()
+      if (roundNumber % 3 == 0)
       {
-         message.text = "";
-      
-         while (player.GetComponent<playerHealth>().lives > 0 && (monkeyCount > 0 || getMonkeysInPlay() > 0))
-         {
-            SpawnMonkey();
-            SpawnItem();
-         
-            yield return null;
-         }
+         monkeyHealth *= 1.25f;
+         monkeyDamage *= 1.25f;
       }
    
-      private IEnumerator RoundEnding ()
-      {
-         if (roundNumber % 2 == 0)
-         {
-            roundMonkeys++;
-         }
+      yield return endWait;
+   }
       
-         if (roundNumber % 3 == 0)
-         {
-            monkeyHealth *= 1.25f;
-            monkeyDamage *= 1.25f;
-         }
-      
-         yield return endWait;
-      }
-      
-      private void SpawnMonkey ()
-      {
-      GameObject spawnedMonkey;
+   private void SpawnMonkey ()
+   {
+   GameObject spawnedMonkey;
 
-         if (getMonkeysInPlay() < 5)
+      if (getMonkeysInPlay() < 5)
       {
          int spawn = Random.Range(0, 4); // choose one of four spawnpoints
-          
+            
          if (Time.fixedTime > monkeySpawnTime && monkeyCount > 0)
-          {
-             if (SafeToSpawn(monkeySpawn[spawn].position, "Enemy"))
+         {
+            if (SafeToSpawn(monkeySpawn[spawn].position, "Enemy"))
             {
                spawnedMonkey = Instantiate(monkey, monkeySpawn[spawn].position, monkeySpawn[spawn].rotation) as GameObject;
                spawnedMonkey.GetComponent<MonkeyControllerTest>().detected = true;
@@ -211,26 +209,26 @@ public class GameManager : MonoBehaviour
 
             monkeyCount--;
             monkeySpawnTime = Time.fixedTime + monkeySpawnDelay; // reset spawn timer
-            }
          }
       }
+   }
+
+   private int getMonkeysInPlay ()
+   {
+      List<GameObject> instances = new List<GameObject>();
+      GameObject[] objects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
+      int count = 0;
    
-      private int getMonkeysInPlay ()
-      {
-         List<GameObject> instances = new List<GameObject>();
-         GameObject[] objects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
-         int count = 0;
-      
-         foreach (GameObject obj in objects)
+      foreach (GameObject obj in objects)
       {
          if (obj.tag == "Enemy")
          {
             count++;
          }
       }
-      
-         return count;
-      }
+   
+      return count;
+   }
    
    private bool SafeToSpawn(Vector3 position, string objectTag)
    {
