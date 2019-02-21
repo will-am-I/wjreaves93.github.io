@@ -107,13 +107,13 @@ $('#codeexample').ready(function()
 			});
 		});
 		
-		$('#hordecs').click(function()
+		$('#gamemanagercs').click(function()
 		{
 			$('#codeexample').css('display', 'block');
 			
 			$.ajax(
 			{
-				url: 'files/horde.cs',
+				url: 'files/GameManager.cs',
 				dataType: 'text',
 				success: function(data)
 				{
