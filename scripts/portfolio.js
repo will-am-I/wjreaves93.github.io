@@ -107,6 +107,21 @@ $('#codeexample').ready(function()
 			});
 		});
 		
+		$('#hordecs').click(function()
+		{
+			$('#codeexample').css('display', 'block');
+			
+			$.ajax(
+			{
+				url: 'files/horde.cs',
+				dataType: 'text',
+				success: function(data)
+				{
+					showExample(data);
+				}
+			});
+		});
+		
 		$('#shoppingcarthtml').click(function()
 		{
 			$('#codeexample').css('display', 'block');
