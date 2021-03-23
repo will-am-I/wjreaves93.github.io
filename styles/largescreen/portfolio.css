@@ -1,4 +1,4 @@
-#codenav
+.codenav
 {
    display: block;
    height: 82%;
@@ -10,7 +10,7 @@
 	margin-top: 5px;
 }
 
-#codenav ul
+.codenav ul
 {
    display: block;
    position: relative;
@@ -20,7 +20,7 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.48);
 }
 
-#codenav ul .code
+.codenav ul .code
 {
    display: block;
    cursor: pointer;
@@ -30,13 +30,13 @@
    list-style-type: none;
 }
 
-#codenav ul .code:hover
+.codenav ul .code:hover
 {
    background-color: #BDBDBD;
    outline: 2px #959595 solid;
 }
 
-#codenav ul .line
+.codenav ul .line
 {
    padding: 0;
    margin: -11px 0px 0px 0px;
@@ -44,7 +44,7 @@
    list-style-type: none;
 }
 
-#codenav ul .line hr
+.codenav ul .line hr
 {
    display: block;
    height: 2px;
